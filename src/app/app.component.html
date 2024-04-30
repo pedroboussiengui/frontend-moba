@@ -1,0 +1,34 @@
+
+<div class="header">
+  <h1>Escolha seu campeão</h1>
+</div>
+<div class="role_filter">
+  <button (click)="filterByRole('')">
+    <div>all</div>
+  </button>
+  <button (click)="filterByRole('Fighter')">
+    <div>fighter</div>
+  </button>
+  <button (click)="filterByRole('Tank')">
+    <div>tank</div>
+  </button>
+  <button (click)="filterByRole('Mage')">
+    <div>mage</div>
+  </button>
+  <button (click)="filterByRole('Assassin')">
+    <div>assassin</div>
+  </button>
+  <button (click)="filterByRole('Suporte')">
+    <div>suporte</div>
+  </button>
+  <button (click)="filterByRole('Marksman')">
+    <div>marksman</div>
+  </button>
+</div>
+<div class="container">
+  @for (hero of dinamicHeroList; track hero.name) {
+    <button (click)="showName(hero.name)">
+      <img [src]="hero.imgSrc" [alt]="hero.name">
+    </button>
+  }
+</div>
