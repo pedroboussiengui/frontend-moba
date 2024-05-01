@@ -1,6 +1,36 @@
 
+.container {
+    display: flex;
+    margin: auto;
+    max-width: 60%;
+    border: 1px solid black;
+}
+
+.ally_heroes {
+    /* border: 5px solid black; */
+    padding-top: 90px;
+    flex: 1;
+}
+
+.enemy_heroes {
+    /* border: 5px solid black; */
+    padding-top: 90px;
+    flex: 1;
+}
+
+.hero {
+    border: 1px solid black;
+    display: block;
+    max-width: 100%;
+}
+
+.main {
+    max-width: 50%;
+    margin: auto;
+}
+
 .header {
-    max-width: 40%;
+    max-width: 100%;
     margin: auto;
     border: 1px solid black;
     text-align: center;
@@ -14,19 +44,24 @@
 .role_filter {
     border: 1px solid black;
     display: flex;
-    max-width: 600px;
-    margin: auto;
-    justify-content: space-around;
-    padding: 10px;
+    max-width: 100%;
+    /* margin: auto; */
+    justify-content: space-between;
+    padding: 10px 0px;
     margin-bottom: 10px;
 }
 
-.container {
+.champion_list {
     border: 1px solid black;
-    max-width: 650px;
-    margin: auto;
+    max-width: 100%;
+    /* margin: auto; */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 3px;
 }
+
+.champion_list p {
+    margin: 0px;
+}
+
 
